@@ -96,3 +96,13 @@ Update the image loading code to:
 ImageIcon openIcon = new ImageIcon(getClass().getResource("/open.png"));
 ```
 The leading / tells Java to load the file from the root of the classpath (i.e., from resources/).
+
+# 🙏 Acknowledgements
+Huge thanks to akashrawr (https://github.com/akashrawr) for the original Chess RMI implementation — this project is based on their awesome work!
+
+You can find the original repository here:
+🔗 https://github.com/akashrawr/ChessRMI
+
+Forked with appreciation and a few bug fixes, tweaks.☕🧠
+
+
