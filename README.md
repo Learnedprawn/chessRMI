@@ -15,6 +15,13 @@ If Maven isn’t installed yet, use:
 ```bash
 sudo apt update
 sudo apt install maven
+```
+
+Verify the installation:
+
+```bash
+mvn -v
+```
 
 
 ### How to run the app:
