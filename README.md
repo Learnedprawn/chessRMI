@@ -61,11 +61,6 @@ This runs ChessClient.java located in src/main/java/Client/.
 
 
 
-### How to run the app:
-1. Open in IDE
-2. Run the server file
-3. Run the client
-
 ----
 
 ### Main Menu
@@ -78,3 +73,26 @@ This runs ChessClient.java located in src/main/java/Client/.
 
 ----
 # chessRMI
+
+# Note
+## ⚠️ Fixing ImageIcon NullPointerException
+If you see an error like:
+
+```csharp
+java.lang.NullPointerException
+    at javax.swing.ImageIcon.<init> ...
+```
+It's likely due to a missing image file. Here's how to fix it:
+
+✅ Step-by-step fix:
+Move all image files (e.g. open.png) to the following directory:
+
+```css
+src/main/resources
+```
+Update the image loading code to:
+
+```java
+ImageIcon openIcon = new ImageIcon(getClass().getResource("/open.png"));
+```
+The leading / tells Java to load the file from the root of the classpath (i.e., from resources/).
