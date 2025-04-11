@@ -23,6 +23,23 @@ Verify the installation:
 mvn -v
 ```
 
+# 🏗️ Building the Project
+Once you're inside the project folder:
+
+```bash
+cd ChessRMI
+mvn clean install
+```
+This command will:
+
+🧹 Clean old compiled files
+
+🛠️ Compile the source code
+
+📦 Package the application inside the target/ folder
+
+
+
 
 ### How to run the app:
 1. Open in IDE
