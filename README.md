@@ -38,6 +38,26 @@ This command will:
 
 📦 Package the application inside the target/ folder
 
+---
+
+### ▶️ Running the Project
+
+You’ll need **two terminals** open — one for the server and one for the client.
+
+#### 1️⃣ Start the Server
+
+```bash
+mvn exec:java -Dexec.mainClass="Server.ChessServer"
+```
+
+This runs ChessServer.java located in src/main/java/Server/.
+
+#### 2️⃣ Start the Client
+```bash
+mvn exec:java -Dexec.mainClass="Client.ChessClient"
+```
+This runs ChessClient.java located in src/main/java/Client/.
+
 
 
 
